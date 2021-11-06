@@ -11,8 +11,8 @@ async function displayFilesFromDirectory() {
       if (stats.isFile()) {
         let fileParse = path.parse(file);
         console.log(
-          `${fileParse.name}-${fileParse.ext.replace(".", "")}-${
-            stats.size / 1024
+          `${fileParse.name} - ${fileParse.ext.replace(".", "")} - ${
+            stats.size / 1000
           }kb`
         );
       }
